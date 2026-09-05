@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-ink antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-forest px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-forest-light;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-ink px-6 py-3 text-sm font-semibold uppercase tracking-wide text-ink transition-colors hover:bg-ink/5;
+  }
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-gold px-6 py-2.5 text-sm font-semibold uppercase tracking-wide text-gold transition-colors hover:bg-gold/10;
+  }
+  .btn-outline-ink {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-ink px-6 py-2.5 text-sm font-semibold uppercase tracking-wide text-ink transition-colors hover:bg-ink/5;
+  }
+  .section-title {
+    @apply flex items-center justify-center gap-4 text-xl font-bold uppercase tracking-wide text-ink md:text-2xl;
+  }
+  .section-title::before,
+  .section-title::after {
+    content: "";
+    @apply h-px w-12 bg-gray-200 sm:w-24 lg:w-[180px];
+  }
+  .section-eyebrow {
+    @apply flex items-center gap-4 text-base font-bold uppercase tracking-wide text-ink;
+  }
+  .section-eyebrow::before,
+  .section-eyebrow::after {
+    content: "";
+    @apply h-px w-9 bg-gray-300 sm:w-[72px];
+  }
+  .container-page {
+    @apply mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8;
+  }
+}
