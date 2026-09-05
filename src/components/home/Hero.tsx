@@ -21,7 +21,7 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-[#faf6ec] via-[#faf6ec]/75 to-transparent lg:hidden" />
 
-      <div className="container-page relative py-14 lg:py-20">
+      <div className="relative w-full px-4 py-14 sm:px-6 lg:py-20 lg:pl-20 lg:pr-8">
         <div className="max-w-[17rem] sm:max-w-sm md:max-w-md lg:max-w-xl">
           <h1 className="font-display text-4xl font-bold leading-tight text-ink sm:text-5xl lg:text-[3.2rem]">
             Pure by Nature.
