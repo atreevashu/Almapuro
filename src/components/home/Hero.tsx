@@ -3,7 +3,7 @@ import Link from "next/link";
 import { trustBadges } from "@/data/site";
 
 const badgeIcons: Record<string, string> = {
-  "100% Natural": "/icons/icon-100-natural.svg",
+  "100% Natural": "/icons/icon-100-natural.png",
   "FSSAI Certified": "/icons/icon-fssai-certified.svg",
   "Farm Fresh": "/icons/icon-farm-fresh.svg",
 };
