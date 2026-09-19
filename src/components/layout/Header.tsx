@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { mainNavLinks, siteInfo } from "@/data/site";
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="relative w-full bg-cream">
       <Link
@@ -22,15 +27,18 @@ export default function Header() {
 
       <div className="container-page flex h-24 items-center justify-end gap-6">
         <nav className="hidden items-center gap-8 whitespace-nowrap pl-32 text-sm font-medium sm:pl-40 lg:flex lg:gap-6 lg:pl-[220px] xl:gap-10">
-          {mainNavLinks.map((link, i) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={i === 0 ? "border-b-2 border-gold-dark pb-1.5 text-gold-dark" : "text-[#364153] transition-colors hover:text-gold-dark"}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {mainNavLinks.map((link) => {
+            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={isActive ? "border-b-2 border-gold-dark pb-1.5 text-gold-dark" : "text-[#364153] transition-colors hover:text-gold-dark"}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="ml-auto flex items-center gap-4">

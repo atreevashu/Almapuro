@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Playfair_Display, Inter, Lato } from "next/font/google";
 import "./globals.css";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import Header from "@/components/layout/Header";
@@ -15,6 +15,13 @@ const playfair = Playfair_Display({
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap",
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-lato",
   display: "swap",
 });
 
@@ -119,7 +126,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
-      <body className={`${playfair.variable} ${inter.variable} font-sans`}>
+      <body className={`${playfair.variable} ${inter.variable} ${lato.variable} font-sans`}>
         <AnnouncementBar />
         <Header />
         <main>{children}</main>

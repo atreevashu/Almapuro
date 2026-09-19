@@ -6,7 +6,7 @@ export const siteInfo = {
   tagline: "Where Tech Meets Nature",
   phone: "+91 91488 53975",
   email: "Hello@almapuroagri.com",
-  address: "Villa No.28, KAK Urban Ville, Gunjurpalye Road, Gunjun Bengaluru - 560087",
+  address: "No.28, KRK Urban Ville, Gunjur, Bengaluru 560087, Karnataka, India",
   logo: "/images/brand-emblem.png",
   social: {
     facebook: "#",
@@ -18,8 +18,7 @@ export const siteInfo = {
 
 export const mainNavLinks = [
   { label: "Home", href: "/" },
-  { label: "Shop", href: "/shop" },
-  { label: "Wholesale", href: "/wholesale" },
+  { label: "Products", href: "/products" },
   { label: "About Us", href: "/about" },
   { label: "Quality & Certifications", href: "/quality" },
   { label: "Contact Us", href: "/contact" },

@@ -26,6 +26,7 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-display)", "serif"],
         sans: ["var(--font-sans)", "sans-serif"],
+        lato: ["var(--font-lato)", "sans-serif"],
       },
       maxWidth: {
         container: "1280px",
