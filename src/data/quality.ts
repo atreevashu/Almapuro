@@ -23,74 +23,31 @@ export const certifications = {
     "We are committed to meeting national and international standards for food safety, quality and sustainable practices.",
   items: [
     {
-      badge: "fssai",
-      badgeColor: "#e8523a",
-      variant: "wordmark" as const,
-      title: "FSSAI",
-      subtitle: "Food Safety and Standards Authority of India",
+      logo: "/images/cert-iso22000.jpg",
+      title: "ISO 22000",
+      subtitle: "International Standards Certification",
     },
     {
-      badge: "ISO",
-      badgeLines: ["ISO", "9001", "2015"],
-      ringColor: "#1447e6",
-      textColor: "#1447e6",
-      lastLineColor: "#155dfc",
-      variant: "ring" as const,
-      title: "ISO 9001:2015",
-      subtitle: "Quality Management System",
-    },
-    {
-      badgeLines: ["HACCP", "CERTIFIED"],
-      bgColor: "#f0fdf4",
-      ringColor: "#008236",
-      textColor: "#016630",
-      lastLineColor: "#008236",
-      variant: "ring" as const,
+      logo: "/images/cert-haccp.jpg",
       title: "HACCP",
-      subtitle: "Food Safety Management",
+      subtitle: "Hazard Analysis Critical Control Point",
     },
     {
-      badgeLines: ["GMP", "CERTIFIED"],
-      bgColor: "#f0fdf4",
-      ringColor: "#00a63e",
-      textColor: "#008236",
-      lastLineColor: "#00a63e",
-      variant: "ring" as const,
-      title: "GMP",
-      subtitle: "Good Manufacturing Practices",
+      logo: "/images/cert-iciuk.png",
+      title: "ICI UK",
+      subtitle: "FSSC 22000\nFood Safety System Certification",
     },
     {
-      icon: "jaivik-leaf",
-      badgeLines: ["JAIVIK"],
-      bgColor: "#f0fdf4",
-      ringColor: "#00c950",
-      textColor: "#008236",
-      variant: "icon" as const,
+      logo: "/images/cert-iciuk.png",
+      title: "ICI UK",
+      subtitle: "Organic Certification\nScheme",
+    },
+    {
+      logo: "/images/cert-jaivik.png",
       title: "Jaivik Bharat",
       subtitle: "Certified Organic Products",
     },
   ],
-};
-
-export const farmToHome = {
-  heading: "From Our Farms to You",
-  paragraph: "Our end-to-end process ensures that only the best reaches your home.",
-  steps: [
-    { icon: "🌱", label: "1. Cultivation", subtitle: "Naturally grown in fertile soil" },
-    { icon: "🌿", label: "2. Harvesting", subtitle: "Handpicked at the right time" },
-    { icon: "⚙️", label: "3. Processing", subtitle: "Hygienic and advanced methods" },
-    { icon: "✅", label: "4. Quality Check", subtitle: "Multiple stages of testing" },
-    { icon: "📦", label: "5. Packaging", subtitle: "Sealed for freshness and purity" },
-    { icon: "🏠", label: "6. To Your Home", subtitle: "Safe, natural and wholesome" },
-  ],
-};
-
-export const testingBanner = {
-  heading: "Rigorous Testing\nfor Your Safety",
-  paragraph:
-    "Our products undergo multiple laboratory tests for purity, contaminants and nutritional content, ensuring they are safe, high-quality and full of natural goodness.",
-  cta: { label: "View Test Reports", href: "#" },
-  image: "/images/quality-lab-photo.jpg",
 };
 
 export const farmersSection = {

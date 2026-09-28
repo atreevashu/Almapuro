@@ -4,9 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { mainNavLinks, siteInfo } from "@/data/site";
+import { useCart } from "@/context/CartContext";
 
 export default function Header() {
   const pathname = usePathname();
+  const { itemCount } = useCart();
 
   return (
     <header className="relative w-full bg-cream">
@@ -48,11 +50,13 @@ export default function Header() {
           <Link href="/account" aria-label="Account">
             <img src="/icons/icon-user.svg" alt="" className="h-5 w-5" />
           </Link>
-          <Link href="/cart" aria-label="Cart" className="relative">
+          <Link href="/cart" aria-label={`Cart, ${itemCount} item${itemCount === 1 ? "" : "s"}`} className="relative">
             <img src="/icons/icon-cart.svg" alt="" className="h-5 w-5" />
-            <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-leaf text-[10px] text-white">
-              0
-            </span>
+            {itemCount > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-leaf text-[10px] text-white">
+                {itemCount > 99 ? "99+" : itemCount}
+              </span>
+            )}
           </Link>
         </div>
       </div>

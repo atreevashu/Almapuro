@@ -5,6 +5,7 @@ import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteInfo, siteUrl } from "@/data/site";
+import { CartProvider } from "@/context/CartContext";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -127,10 +128,12 @@ export default function RootLayout({
         />
       </head>
       <body className={`${playfair.variable} ${inter.variable} ${lato.variable} font-sans`}>
-        <AnnouncementBar />
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <CartProvider>
+          <AnnouncementBar />
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );
