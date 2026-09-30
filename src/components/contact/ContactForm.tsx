@@ -3,9 +3,9 @@
 import { contactForm } from "@/data/contact";
 
 const inputClass =
-  "w-full rounded-lg border border-[#d5cbbc] bg-[#fafaf8] px-4 py-2.5 font-lato text-sm text-[#112519] placeholder:text-[#b5ada2] transition-colors focus:border-forest focus:bg-white focus:outline-none focus:ring-2 focus:ring-forest/40";
+  "w-full rounded-lg border border-[#d5cbbc] bg-[#fafaf8] px-4 py-2.5 font-sans text-sm text-[#112519] placeholder:text-[#b5ada2] transition-colors focus:border-forest focus:bg-white focus:outline-none focus:ring-2 focus:ring-forest/40";
 
-const labelClass = "font-lato text-xs font-bold uppercase tracking-wide text-[#1c3d2e]";
+const labelClass = "font-sans text-xs font-bold uppercase tracking-wide text-[#1c3d2e]";
 
 function FieldLabel({ htmlFor, text }: { htmlFor: string; text: string }) {
   const required = text.endsWith("*");
@@ -102,7 +102,10 @@ export default function ContactForm() {
         />
       </div>
 
-      <button type="submit" className="btn-primary mt-2 w-fit">
+      <button
+        type="submit"
+        className="mt-2 inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-[#1c3d2e] px-6 py-3 font-sans text-sm font-semibold text-white transition-colors hover:bg-[#254d38]"
+      >
         <img src="/icons/icon-contact-send.svg" alt="" className="h-4 w-4" />
         {contactForm.submitLabel}
       </button>

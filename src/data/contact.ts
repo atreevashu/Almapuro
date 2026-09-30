@@ -38,7 +38,7 @@ export const contactInfo = {
   office: {
     name: "Almapuro Agri Private Limited",
     location: "Bengaluru, Karnataka",
-    mapImage: "/images/contact-map.jpg",
+    mapImage: "/images/contact-office-photo.jpg",
     mapLink: "#",
     mapLinkLabel: "View on Google Maps",
   },

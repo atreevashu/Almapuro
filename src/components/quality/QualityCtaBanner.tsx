@@ -10,16 +10,16 @@ export default function QualityCtaBanner() {
 
       <div className="container-page relative flex flex-col items-start gap-6 py-14 sm:flex-row sm:items-center sm:justify-between sm:py-16">
         <div>
-          <h2 className="whitespace-pre-line font-display text-3xl font-bold leading-[1.15] text-white sm:text-4xl lg:text-[40px] lg:leading-[1.15]">
+          <h2 className="whitespace-pre-line font-display text-3xl font-normal leading-[1.15] text-white sm:text-4xl lg:text-[36px]">
             {qualityCta.heading}
           </h2>
-          <p className="mt-3 max-w-xs font-lato text-base font-semibold text-white/75">
+          <p className="mt-3 max-w-xs font-sans text-base font-normal text-white">
             {qualityCta.subheading}
           </p>
         </div>
         <Link
           href={qualityCta.cta.href}
-          className="inline-flex shrink-0 items-center gap-2 rounded bg-[#c8a84b] px-6 py-3 font-lato text-sm font-bold uppercase tracking-wide text-white transition-colors hover:bg-[#b89638]"
+          className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-[#c8973a] px-6 py-3 font-sans text-base font-semibold tracking-wide text-white transition-colors hover:bg-[#b0862f]"
         >
           {qualityCta.cta.label}
           <img src="/icons/icon-cta-arrow.svg" alt="" className="h-[9.6px] w-[11.2px]" />

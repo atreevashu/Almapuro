@@ -19,7 +19,7 @@ export default function ContactHero() {
           <h1 className="whitespace-pre-line font-display text-4xl font-bold leading-[1.28] text-[#112519] sm:text-5xl lg:text-[48px] lg:leading-[62px]">
             {contactHero.heading}
           </h1>
-          <p className="mt-5 font-lato text-lg font-bold leading-snug text-[#112519]/70 sm:text-xl lg:text-[21px] lg:leading-[29px]">
+          <p className="mt-5 font-lato text-lg font-bold leading-snug text-[#112519] sm:text-xl lg:text-[21px] lg:leading-[29px]">
             {contactHero.paragraph}
           </p>
           <p className="mt-5 font-display text-xl font-semibold text-[#c47c2a] sm:text-2xl lg:text-[26px]">

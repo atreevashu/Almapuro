@@ -6,8 +6,8 @@ export default function Certifications() {
     <section className="bg-[#f0f5ee]">
       <div className="container-page py-16 lg:py-20">
         <div className="flex flex-col items-center gap-3 text-center">
-          <h2 className="section-title">{certifications.heading}</h2>
-          <p className="max-w-xl font-lato text-base leading-[26px] text-[#6a7282]">
+          <h2 className="font-display text-2xl font-bold text-[#1a3a1e]">{certifications.heading}</h2>
+          <p className="max-w-xl font-sans text-sm leading-[26px] text-[#6a7282]">
             {certifications.paragraph}
           </p>
         </div>
