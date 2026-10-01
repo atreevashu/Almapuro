@@ -1,6 +1,0 @@
-<svg width="80.00" height="80.00" viewBox="0 0 80.00 80.00" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path transform="translate(2.000,2.000)" d="M76 38L75.25 38C75.25 58.5726 58.5726 75.25 38 75.25L38 76L38 76.75C59.401 76.75 76.75 59.401 76.75 38L76 38ZM38 76L38 75.25C17.4274 75.25 0.75 58.5726 0.75 38L0 38L-0.75 38C-0.75 59.401 16.599 76.75 38 76.75L38 76ZM0 38L0.75 38C0.75 17.4274 17.4274 0.75 38 0.75L38 0L38 -0.75C16.599 -0.75 -0.75 16.599 -0.75 38L0 38ZM38 0L38 0.75C58.5726 0.75 75.25 17.4274 75.25 38L76 38L76.75 38C76.75 16.599 59.401 -0.75 38 -0.75L38 0Z" fill="#2e7d32" fill-rule="evenodd"/>
-<path transform="translate(24.000,24.000)" d="M0 16C4 8 10 2 16 0C22 2 28 8 32 16C28 24 22 30 16 32C10 30 4 24 0 16Z" fill="#2e7d32" fill-rule="evenodd"/>
-<path transform="translate(32.000,26.000)" d="M8 0C6 4 2 8 0 14L16 14C14 8 10 4 8 0Z" fill="#2e7d32" fill-rule="evenodd"/>
-<path transform="translate(32.000,40.000)" d="M0 0C2 6 5 10 8 13C11 10 14 6 16 0L0 0Z" fill="#4caf50" fill-rule="evenodd"/>
-</svg>

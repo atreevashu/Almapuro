@@ -1,10 +1,10 @@
 import { qualityPromise } from "@/data/quality";
 
 const iconMap: Record<string, string> = {
-  natural: "/icons/icon-quality-natural.svg",
-  purity: "/icons/icon-quality-purity.svg",
-  nutrient: "/icons/icon-quality-nutrient.svg",
-  ethical: "/icons/icon-quality-ethical.svg",
+  natural: "/icons/icon-quality-natural.png",
+  purity: "/icons/icon-quality-purity.png",
+  nutrient: "/icons/icon-quality-nutrient.png",
+  ethical: "/icons/icon-quality-ethical.png",
 };
 
 export default function QualityPromise() {
